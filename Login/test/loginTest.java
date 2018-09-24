@@ -27,18 +27,16 @@ public class loginTest {
     }
 
     @Test(dataProvider="Authentication")
- 
     public void Registration_data(String sUserName,String sPassword)throws  Exception{
  
         driver.findElement(By.id("signin-loginid")).sendKeys(sUserName);
- 
+        
         driver.findElement(By.id("signin-password")).sendKeys(sPassword);
  
         driver.findElement(By.id("submitButton")).click();
  
 		}
      @DataProvider
- 
     public Object[][] Authentication() throws Exception{
  
          String[][] testObjArray = Excel.getData();
