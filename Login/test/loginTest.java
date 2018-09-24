@@ -14,8 +14,6 @@ import org.testng.annotations.Test;
 
 public class loginTest {
     
-    public loginTest() {
-    }
     WebDriver driver ;
 
     @BeforeMethod
@@ -50,5 +48,6 @@ public class loginTest {
 		}
     @AfterMethod
     public void tearDownMethod() throws Exception {
+        driver.close();
     }
 }
