@@ -48,6 +48,7 @@ public class SignUp {
         driver.findElement(By.id("create-account-confirm-password")).sendKeys(password);
         driver.findElement(By.id("create-account-expedia-policy")).click();
         
+        driver.close();
         
 
 
